@@ -1,0 +1,295 @@
+
+/* 
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto/Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    src: url("Roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+  } */
+
+  
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: Roboto;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    max-width: 1440px;
+}
+
+
+.sidebar_holder {
+}
+
+.sidebar, .right_side {
+    height: 100%;
+}
+
+.sidebar {
+    left: 0;
+    top: 0;
+    background-color:#4c1d95;
+    color: white;
+    padding: 20px;
+} 
+
+.main_sidebar, .secondary_sidebar {
+   margin-top: 40px;
+}
+
+.main_sidebar_el a{
+    display: flex;
+    align-items: center;
+}
+
+.main_sidebar_el_icon {
+    margin-right: 8px;
+    width:30px;
+}
+
+.main_sidebar_el_icon img {
+    width: 100%;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.header {
+    background-color: #ede9fe;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header_top,
+.header_bot {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.searchbar input {
+    height: 20px;
+    width: 500px;
+    border-radius: 12px;
+    border-width: 1px;
+    background-color: white;
+    padding: 2px 5px;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.search-icon img {
+    margin-top: 5px;
+}
+
+.profile-buttons {
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+/* greeting part */
+.greeting-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.greeting-image {
+    grid-row: 1 / 3;
+    width: 50px;
+}
+
+.greeting-header {
+    font-size: 1em;
+    align-self: flex-end;
+}
+
+.greeting-name {
+    font-size: 1.2em;
+}
+
+
+.greeting-image {
+    height: 70px;
+    width:70px;
+}
+
+/* buttons */
+.action-buttons {
+    display: flex;
+    justify-content:right;
+    gap: 50px;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.top-button {
+    height: 2rem;
+    width: 6rem;
+    color: white;
+    background-color: #6d28d9;
+    border-radius: 40px;
+    border: none;
+}
+
+
+/* content */
+.content {
+    display: flex;
+    padding: 0px 20px;
+    gap:20px;
+    /* width: calc(100vw - 195px); */
+}
+
+.projects {
+    width: 75%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 20px; */
+}
+
+
+
+.card {
+    /* width: calc(50% - 20px); */
+    border-radius:12px;
+    background: #ede9fe;
+    height: 140px;
+    position: relative;
+    overflow: hidden;
+    padding: 15px 15px 15px 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card p {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.card_icons {
+    align-self: flex-end;
+    display: flex;
+}
+
+.card_icons div {
+    margin-right: 20px;
+}
+
+.card_icon {
+    width: 25px;
+    height: 25px;
+}
+
+.card_icon img {
+    width: 100%;
+}
+
+.card_icons div:last-of-type {
+    margin-right: 0;
+}
+
+.card::after {
+    content: "";
+    height: 100%;
+    width: 8px;
+    background: #6d28d9; 
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.sidebar-rightside {
+    width: 25%;
+}
+
+.announcements,
+.trending {
+    width: 100%;
+    height: 200px;
+    background: #ede9fe;
+    border-radius:12px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    font-size: 0.7em;
+    justify-content: space-around;
+}
+
+.spacing-line {
+    height: 1px;
+    background-color: grey;
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.trend-logo {
+    width: 30px;
+}
+
+.trend-logo img {
+    width: 100%;
+}
+
